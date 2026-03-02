@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & RFQ | Fran Optics</title>
+  <meta name="description" content="Send your RFQ to Fran Optics and discuss your optical component requirements with our engineering team.">
+  <link rel="icon" href="assets/media/favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Fran Optics home">
+          <img src="assets/media/logo-fran.png" alt="Fran Optics" class="brand-logo">
+          <span class="brand-mark">Precision Optics</span>
+        </a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+        <nav class="site-nav" id="site-nav">
+          <a href="index.html" data-nav="home">Home</a>
+          <a href="products.html" data-nav="products">Products</a>
+          <a href="capabilities.html" data-nav="capabilities">Capabilities</a>
+          <a href="about.html" data-nav="about">About</a>
+          <a href="contact.html" data-nav="contact">Contact</a>
+        </nav>
+        <a href="zh/contact.html" class="btn btn-sm lang-switch" aria-label="Switch to Chinese">中文</a>
+        <a href="contact.html" class="btn btn-sm btn-primary desktop-cta">Request Quote</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-block" style="min-height:420px">
+            <img src="assets/media/hero-optics.jpg" alt="Optical component close-up" class="hero-media" style="object-position: 74% center">
+            <div class="hero-overlay"></div>
+            <div class="hero-panel reveal">
+              <span class="eyebrow">Contact & RFQ</span>
+              <h1>Share Your Requirement, We Build the Manufacturing Path</h1>
+              <p>For fast evaluation, include your part drawing, target quantity, surface/coating requirements, and application environment.</p>
+              <div class="hero-actions">
+                <a href="#rfq" class="btn btn-md btn-primary">Submit RFQ</a>
+                <a href="capabilities.html" class="btn btn-md btn-ghost">Review Capabilities</a>
+              </div>
+            </div>
+            <div class="hero-aside reveal" data-stagger="1">
+              <div class="hero-card">
+                <h3>Typical response flow</h3>
+                <p>Requirement review → feasibility feedback → proposal discussion → sample/pilot planning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="container cards-grid grid-3">
+          <article class="panel reveal">
+            <span class="tag">Sales</span>
+            <h3>Commercial Inquiry</h3>
+            <p>For pricing, lead-time, and order terms. Include estimated annual quantity and target market.</p>
+          </article>
+          <article class="panel reveal" data-stagger="1">
+            <span class="tag">Engineering</span>
+            <h3>Technical Review</h3>
+            <p>For drawing-based feasibility, tolerance review, coating discussion, and DFM optimization.</p>
+          </article>
+          <article class="panel reveal" data-stagger="2">
+            <span class="tag">Program</span>
+            <h3>Project Tracking</h3>
+            <p>For prototype schedule, pilot transition, and quality/reporting handoff alignment.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="rfq">
+        <div class="container split">
+          <form class="panel reveal" data-rfq-form>
+            <span class="eyebrow">RFQ Form</span>
+            <h2>Request Quote / Talk to Engineer</h2>
+            <p class="section-copy">Fields marked with * are recommended for faster technical evaluation.</p>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full Name *</label>
+                <input id="name" name="name" type="text" required>
+              </div>
+              <div class="field">
+                <label for="company">Company *</label>
+                <input id="company" name="company" type="text" required>
+              </div>
+              <div class="field">
+                <label for="email">Business Email *</label>
+                <input id="email" name="email" type="email" required>
+              </div>
+              <div class="field">
+                <label for="country">Country / Region</label>
+                <input id="country" name="country" type="text">
+              </div>
+              <div class="field">
+                <label for="application">Application *</label>
+                <select id="application" name="application" required>
+                  <option value="">Select</option>
+                  <option>Security & Surveillance</option>
+                  <option>Automotive Optics</option>
+                  <option>AR/VR & Consumer</option>
+                  <option>Medical Devices</option>
+                  <option>Industrial / Smart Infrastructure</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="stage">Project Stage</label>
+                <select id="stage" name="stage">
+                  <option>Concept / Feasibility</option>
+                  <option>Prototype</option>
+                  <option>Pilot</option>
+                  <option>Mass Production</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="quantity">Expected Quantity</label>
+                <input id="quantity" name="quantity" type="text" placeholder="e.g., 2,000 pcs / month">
+              </div>
+              <div class="field full">
+                <label for="message">Project Details *</label>
+                <textarea id="message" name="message" required placeholder="Part geometry, material, tolerance, coating, environment, and delivery expectation."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-md btn-primary" style="margin-top:0.95rem">Send RFQ</button>
+            <p class="notice" data-rfq-notice>RFQ submitted. In production deployment, this form should connect to your CRM or mailbox workflow.</p>
+          </form>
+
+          <div class="panel reveal" data-stagger="1">
+            <span class="eyebrow">Preparation Checklist</span>
+            <h3>What to include for a faster quote cycle</h3>
+            <ul class="clean-list">
+              <li>2D/3D drawing package and critical dimensions</li>
+              <li>Optical targets: transmission, coating, wavelength, etc.</li>
+              <li>Tolerance priorities and acceptance criteria</li>
+              <li>Expected annual quantity and launch timeline</li>
+              <li>Packaging and transport requirements</li>
+            </ul>
+            <h4 style="margin-top:1.3rem">Recommended Process</h4>
+            <p>For complex parts, start with a technical review before final commercial quotation. This helps prevent avoidable redesign rounds.</p>
+            <figure class="figure" style="margin-top:0.8rem">
+              <img src="assets/media/product-medical-prism.jpg" alt="Precision optical sample">
+              <figcaption>Representative precision optics sample used in structured RFQ communication.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="container">
+          <div class="cta-band reveal">
+            <h3>Need a direct engineering call?</h3>
+            <p>Use the RFQ form and mark your preferred meeting window. We can align technical assumptions before quotation finalization.</p>
+            <a href="#rfq" class="btn btn-md btn-secondary">Open RFQ Form</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Fran Optics</h4>
+          <p>Precision optical component manufacturing for global OEM and engineering teams.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="capabilities.html">Capabilities</a></li>
+            <li><a href="products.html">Products</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="products.html">Product Catalog</a></li>
+            <li><a href="capabilities.html#quality">Quality Workflow</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get Started</h4>
+          <ul>
+            <li><a href="#rfq">Submit RFQ</a></li>
+            <li><a href="contact.html">Talk to Engineering</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-current-year></span> Fran Optics. All rights reserved.</span>
+        <span>RFQ form currently set up as frontend demo interaction.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

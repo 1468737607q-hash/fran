@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>联系与询盘 | 富兰光学</title>
+  <meta name="description" content="向富兰光学提交 RFQ，与工程团队沟通你的光学元件项目需求。">
+  <link rel="icon" href="../assets/media/favicon.ico">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="富兰光学首页">
+          <img src="../assets/media/logo-fran.png" alt="Fran Optics" class="brand-logo">
+          <span class="brand-mark">Precision Optics</span>
+        </a>
+        <button class="nav-toggle" aria-label="打开导航" aria-expanded="false" aria-controls="site-nav">☰</button>
+        <nav class="site-nav" id="site-nav">
+          <a href="index.html" data-nav="home">首页</a>
+          <a href="products.html" data-nav="products">产品</a>
+          <a href="capabilities.html" data-nav="capabilities">能力</a>
+          <a href="about.html" data-nav="about">公司</a>
+          <a href="contact.html" data-nav="contact">联系</a>
+        </nav>
+        <a href="../contact.html" class="btn btn-sm lang-switch" aria-label="Switch to English">EN</a>
+        <a href="contact.html" class="btn btn-sm btn-primary desktop-cta">立即询盘</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-block" style="min-height:420px">
+            <img src="../assets/media/hero-optics.jpg" alt="光学元件" class="hero-media" style="object-position: 74% center">
+            <div class="hero-overlay"></div>
+            <div class="hero-panel reveal">
+              <span class="eyebrow">联系与 RFQ</span>
+              <h1>提交需求，我们一起定义可落地制造方案</h1>
+              <p>为提升响应速度，建议提供图纸、目标数量、关键公差、镀膜要求与应用环境信息。</p>
+              <div class="hero-actions">
+                <a href="#rfq" class="btn btn-md btn-primary">填写 RFQ</a>
+                <a href="capabilities.html" class="btn btn-md btn-ghost">查看制造能力</a>
+              </div>
+            </div>
+            <div class="hero-aside reveal" data-stagger="1">
+              <div class="hero-card">
+                <h3>典型流程</h3>
+                <p>需求评审 → 可行性反馈 → 方案讨论 → 样件/小批导入计划。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="container cards-grid grid-3">
+          <article class="panel reveal">
+            <span class="tag">商务</span>
+            <h3>价格与交付咨询</h3>
+            <p>用于询问价格、交期和合作条款，建议附上年度需求规模。</p>
+          </article>
+          <article class="panel reveal" data-stagger="1">
+            <span class="tag">工程</span>
+            <h3>技术可行性评审</h3>
+            <p>用于图纸评估、公差讨论、镀膜选择与 DFM 优化沟通。</p>
+          </article>
+          <article class="panel reveal" data-stagger="2">
+            <span class="tag">项目</span>
+            <h3>项目推进与跟踪</h3>
+            <p>用于样件节奏、小批切换、质量文件与交付节点对齐。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="rfq">
+        <div class="container split">
+          <form class="panel reveal" data-rfq-form>
+            <span class="eyebrow">RFQ 表单</span>
+            <h2>提交询盘 / 对接工程师</h2>
+            <p class="section-copy">建议优先填写带 * 字段，以便更快完成技术评估。</p>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">姓名 *</label>
+                <input id="name" name="name" type="text" required>
+              </div>
+              <div class="field">
+                <label for="company">公司 *</label>
+                <input id="company" name="company" type="text" required>
+              </div>
+              <div class="field">
+                <label for="email">企业邮箱 *</label>
+                <input id="email" name="email" type="email" required>
+              </div>
+              <div class="field">
+                <label for="country">国家 / 地区</label>
+                <input id="country" name="country" type="text">
+              </div>
+              <div class="field">
+                <label for="application">应用方向 *</label>
+                <select id="application" name="application" required>
+                  <option value="">请选择</option>
+                  <option>安防监控</option>
+                  <option>汽车光学</option>
+                  <option>AR/VR 与消费电子</option>
+                  <option>医疗设备</option>
+                  <option>工业 / 智慧基础设施</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="stage">项目阶段</label>
+                <select id="stage" name="stage">
+                  <option>概念 / 可行性</option>
+                  <option>样件阶段</option>
+                  <option>小批阶段</option>
+                  <option>量产阶段</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="quantity">预估数量</label>
+                <input id="quantity" name="quantity" type="text" placeholder="例如：每月 2,000 件">
+              </div>
+              <div class="field full">
+                <label for="message">项目说明 *</label>
+                <textarea id="message" name="message" required placeholder="请描述几何结构、材料、公差、镀膜、应用环境与交付要求。"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-md btn-primary" style="margin-top:0.95rem">提交 RFQ</button>
+            <p class="notice" data-rfq-notice>已提交。当前为前端演示，正式上线建议接入企业邮箱或 CRM 系统。</p>
+          </form>
+
+          <div class="panel reveal" data-stagger="1">
+            <span class="eyebrow">资料准备建议</span>
+            <h3>提高报价效率的关键信息</h3>
+            <ul class="clean-list">
+              <li>2D/3D 图纸与关键尺寸标注</li>
+              <li>透过率、波段、镀膜等光学目标</li>
+              <li>关键公差与验收标准</li>
+              <li>年度需求规模与项目时间计划</li>
+              <li>包装与运输要求</li>
+            </ul>
+            <h4 style="margin-top:1.3rem">推荐做法</h4>
+            <p>复杂项目建议先进行技术评审，再进入最终商务报价，可显著降低返工与周期风险。</p>
+            <figure class="figure" style="margin-top:0.8rem">
+              <img src="../assets/media/product-medical-prism.jpg" alt="精密光学样件">
+              <figcaption>代表性精密光学样件，用于 RFQ 技术沟通示意。</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="container">
+          <div class="cta-band reveal">
+            <h3>需要直接安排工程会议？</h3>
+            <p>在 RFQ 中填写可会议时间，我们可先完成技术假设对齐，再进入正式报价流程。</p>
+            <a href="#rfq" class="btn btn-md btn-secondary">打开 RFQ 表单</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>富兰光学 Fran Optics</h4>
+          <p>服务全球 OEM 与工程团队的精密光学元件制造合作伙伴。</p>
+        </div>
+        <div>
+          <h4>公司</h4>
+          <ul>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="capabilities.html">制造能力</a></li>
+            <li><a href="products.html">产品中心</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>方案</h4>
+          <ul>
+            <li><a href="products.html">产品目录</a></li>
+            <li><a href="capabilities.html#quality">质量流程</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>快速开始</h4>
+          <ul>
+            <li><a href="#rfq">提交 RFQ</a></li>
+            <li><a href="contact.html">工程沟通</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-current-year></span> Fran Optics. 保留所有权利。</span>
+        <span>RFQ 表单目前为前端交互演示。</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
