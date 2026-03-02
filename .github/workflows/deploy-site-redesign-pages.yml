@@ -1,0 +1,47 @@
+name: Deploy FranOptics Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - codex/franoptics2
+    paths:
+      - 'web/site-redesign/**'
+      - '.github/workflows/deploy-site-redesign-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Add .nojekyll
+        run: touch web/site-redesign/.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/site-redesign
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
