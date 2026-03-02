@@ -1185,6 +1185,175 @@ td {
   color: var(--text-2);
 }
 
+/* Stronger Apple-like Homepage Variant */
+.apple-hero-shell {
+  grid-template-columns: 1fr;
+  min-height: 780px;
+}
+
+.apple-hero-shell .hero-panel {
+  align-items: center;
+  text-align: center;
+  padding-top: 4.8rem;
+  padding-bottom: 1.4rem;
+}
+
+.apple-hero-shell .impact-title {
+  max-width: 18ch;
+  font-size: clamp(2.5rem, 6.2vw, 5.4rem);
+  line-height: 1.02;
+}
+
+.apple-hero-shell .impact-sub {
+  max-width: 62ch;
+  font-size: 1.08rem;
+}
+
+.apple-hero-shell .hero-actions {
+  justify-content: center;
+}
+
+.apple-hero-shell .impact-stat-grid {
+  width: min(760px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.apple-hero-shell .impact-stat {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.apple-hero-shell .hero-aside {
+  padding-top: 0;
+  align-items: center;
+}
+
+.apple-hero-shell .hero-scene-wrap {
+  width: min(560px, 100%);
+  margin: 0 auto;
+}
+
+.apple-hero-shell .impact-live-card {
+  width: min(660px, 100%);
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.apple-intro {
+  padding-top: 5.7rem;
+  padding-bottom: 2.2rem;
+}
+
+.apple-intro-copy {
+  margin: 0 auto;
+  max-width: 980px;
+  text-align: center;
+}
+
+.apple-intro-copy p {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.apple-intro-copy h2 {
+  margin: 0.7rem 0 0;
+  font-size: clamp(2.1rem, 4.2vw, 4.1rem);
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+}
+
+.apple-proof {
+  padding-top: 3.4rem;
+}
+
+.apple-proof .section-head {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.apple-proof .proof-card h3 {
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  letter-spacing: -0.02em;
+}
+
+.apple-product-wall {
+  padding-top: 5.2rem;
+}
+
+.apple-product-wall .container {
+  border-radius: 34px;
+  padding: 3rem;
+  background:
+    radial-gradient(850px 300px at 80% 10%, rgba(0, 113, 227, 0.3), transparent 65%),
+    #0b0b0c;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.22);
+}
+
+.apple-product-wall .section-head {
+  margin-bottom: 2.1rem;
+}
+
+.apple-product-wall .section-head .eyebrow {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.apple-product-wall .section-head h2 {
+  color: #fff;
+}
+
+.apple-product-wall .impact-product-card {
+  border-color: rgba(255, 255, 255, 0.14);
+  background: #1a1a1c;
+  box-shadow: none;
+}
+
+.apple-product-wall .impact-product-card h3 {
+  color: #fff;
+}
+
+.apple-product-wall .impact-product-card p {
+  color: #c8c8ce;
+}
+
+.apple-product-wall .btn-primary {
+  background: #fff;
+  color: #101012;
+  box-shadow: none;
+}
+
+.apple-product-wall .btn-primary:hover {
+  background: #f2f2f5;
+}
+
+.apple-final-cta {
+  text-align: center;
+  padding: 2.4rem;
+}
+
+.apple-final-cta h3 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 16ch;
+  font-size: clamp(1.9rem, 3.8vw, 3.3rem);
+  line-height: 1.08;
+}
+
+.apple-final-cta p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 62ch;
+}
+
+.apple-final-cta .hero-actions {
+  justify-content: center;
+}
+
 /* old utility blocks still used */
 .trust-strip {
   margin-top: 1rem;
@@ -1294,6 +1463,14 @@ td {
   .impact-frame-main {
     inset: 0 12% 26% 0;
   }
+
+  .apple-hero-shell {
+    min-height: 700px;
+  }
+
+  .apple-product-wall .container {
+    padding: 2.3rem;
+  }
 }
 
 @media (max-width: 860px) {
@@ -1351,6 +1528,23 @@ td {
 
   .impact-stat-grid {
     grid-template-columns: 1fr;
+  }
+
+  .apple-hero-shell .impact-title {
+    font-size: clamp(2.2rem, 9vw, 4rem);
+  }
+
+  .apple-hero-shell .impact-sub {
+    font-size: 1rem;
+  }
+
+  .apple-hero-shell .hero-panel {
+    padding-top: 3rem;
+  }
+
+  .apple-product-wall .container {
+    border-radius: 24px;
+    padding: 1.5rem;
   }
 
   .impact-marquee-track {
@@ -1419,6 +1613,14 @@ td {
 
   .impact-radar {
     margin-bottom: 0.68rem;
+  }
+
+  .apple-intro-copy h2 {
+    font-size: clamp(1.8rem, 8vw, 2.7rem);
+  }
+
+  .apple-final-cta {
+    padding: 1.6rem 1.2rem;
   }
 
   .impact-product-card img {
